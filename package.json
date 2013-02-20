@@ -1,7 +1,7 @@
 {
-  "name": "make-event-emitter",
+  "name": "mcgee",
   "version": "0.0.0",
-  "description": "Makes event emitters. duh",
+  "description": "Makes event emitters.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,8 @@
   "license": "BSD",
   "dependencies": {
     "inherits": "~1.0.0"
+  },
+  "devDependencies": {
+    "tape": "~0.2.2"
   }
 }
