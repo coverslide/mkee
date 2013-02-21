@@ -1,11 +1,11 @@
 var test = require('tape')
-var mcgee = require('./')
+var mkee = require('./')
 
 function F(){}
 
 
 test('basic func', function(t){
-  mcgee(F)
+  mkee(F)
   var f = new F
 
   t.notOk(f.b, 'should not exist')
