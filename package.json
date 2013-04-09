@@ -1,6 +1,6 @@
 {
   "name": "mkee",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Makes event emitters.",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,6 @@
   "repository": "",
   "author": "",
   "license": "BSD",
-  "dependencies": {
-    "inherits": "~1.0.0"
-  },
   "devDependencies": {
     "tape": "~0.2.2"
   }
