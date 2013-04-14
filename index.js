@@ -1,14 +1,11 @@
 var EventEmitter = require('events').EventEmitter
+var inherits = require('util').inherits
 
-module.exports = function makeEventEmitter(target){
-  extend(EventEmitter, target)
-  EventEmitter.call(target)
-}
+module.exports = makeEventEmitter
 
-// non-destructively extend from base class
-function extend(src, target){
-  Object.keys(src.prototype).forEach(function(prop){
-    if(!target.prototype[prop])
-      target.prototype[prop] = src.prototype[prop]
-  })
+makeEventEmitter.EventEmitter = EventEmitter
+
+function makeEventEmitter(target){
+  inherits(target, EventEmitter)
+  return target
 }
